@@ -78,58 +78,31 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_R3a8kP": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_46mqyz": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "text_7jaqNK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_K6etFe": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_46mqyz",
-        "text_7jaqNK",
-        "button_K6etFe"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
+    "custom_liquid_A67FUY": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "image": "shopify://shop_images/94ce6db994428014172684a7824da9a4cd0b55ac.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
+        "custom_liquid": "",
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_fMCtUE": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "image_with_text_R3a8kP"
+    "custom_liquid_A67FUY",
+    "custom_liquid_fMCtUE"
   ]
 }
