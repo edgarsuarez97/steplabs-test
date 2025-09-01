@@ -1,0 +1,417 @@
+.group-8 .grid {
+  margin-bottom: 0;
+}
+
+.group-8 .grid__item {
+  position: relative;
+}
+
+@media screen and (min-width: 750px) {
+  .group-8__grid--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.group-8__media {
+  min-height: 100%;
+  overflow: visible;
+}
+
+.group-8__media--small {
+  height: 19.4rem;
+}
+
+.group-8__media--medium {
+  height: 29.6rem;
+}
+
+.group-8__media--large {
+  height: 43.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .group-8__media--small {
+    height: 31.4rem;
+  }
+
+  .group-8__media--medium {
+    height: 46rem;
+  }
+
+  .group-8__media--large {
+    height: 69.5rem;
+  }
+}
+
+.group-8__media--placeholder {
+  position: relative;
+  overflow: hidden;
+}
+
+.group-8__media--placeholder:after {
+  content: '';
+  position: absolute;
+  background: rgba(var(--color-foreground), 0.04);
+}
+
+.group-8__media--placeholder.group-8__media--adapt {
+  height: 20rem;
+}
+
+@media screen and (min-width: 750px) {
+  .group-8__media--placeholder.group-8__media--adapt {
+    height: 30rem;
+  }
+}
+
+.group-8__media--placeholder > svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.group-8__media--placeholder:is(.animate--ambient, .animate--zoom-in) > .svg-wrapper {
+  top: 0;
+  left: 0;
+  transform: translate(0);
+}
+
+.group-8__content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-self: center;
+  padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.group-8 .grid__item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.group-8:not(.group-8--overlap) .group-8__media-item:after {
+  border-radius: var(--media-radius);
+  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--media-shadow-opacity));
+}
+
+.group-8:not(.group-8--overlap) .group-8__text-item:after {
+  border-radius: var(--text-boxes-radius);
+  box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset)
+    var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
+}
+
+.group-8 .group-8__media-item > * {
+  border-radius: var(--media-radius);
+  overflow: hidden;
+  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--media-shadow-opacity));
+}
+
+.group-8 .global-media-settings {
+  overflow: hidden !important;
+}
+
+.group-8 .group-8__text-item > * {
+  border-radius: var(--text-boxes-radius);
+  overflow: hidden;
+  box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset)
+    var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
+}
+
+.group-8:not(.group-8--overlap) .group-8__media-item > *,
+.group-8:not(.group-8--overlap) .group-8__text-item > * {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 749px) {
+  .group-8.collapse-corners:not(.group-8--overlap) .group-8__media-item:after,
+  .group-8.collapse-corners:not(.group-8--overlap) .grid__item .group-8__media,
+  .group-8.collapse-corners:not(.group-8--overlap) .group-8__media img,
+  .group-8.collapse-corners:not(.group-8--overlap) .group-8__media .placeholder-svg {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .group-8.collapse-corners:not(.group-8--overlap) .group-8__text-item:after,
+  .group-8.collapse-corners:not(.group-8--overlap) .grid__item .group-8__content {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .group-8.collapse-borders:not(.group-8--overlap) .group-8__content {
+    border-top: 0;
+  }
+}
+
+.group-8__content--mobile-right > * {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.group-8__content--mobile-center > * {
+  align-self: center;
+  text-align: center;
+}
+
+.group-8--overlap .group-8__content {
+  width: 90%;
+  margin: -3rem auto 0;
+}
+
+@media screen and (min-width: 750px) {
+  .group-8__grid--reverse .group-8__content {
+    margin-left: auto;
+  }
+
+  .group-8__content--bottom {
+    justify-content: flex-end;
+    align-self: flex-end;
+  }
+
+  .group-8__content--top {
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+
+  .group-8__content--desktop-right > * {
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .group-8__content--desktop-left > * {
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .group-8__content--desktop-center > * {
+    align-self: center;
+    text-align: center;
+  }
+
+  .group-8--overlap .group-8__text-item {
+    display: flex;
+    padding: 3rem 0;
+  }
+
+  .group-8--overlap .group-8__content {
+    height: auto;
+    width: calc(100% + 4rem);
+    min-width: calc(100% + 4rem);
+    margin-top: 0;
+    margin-left: -4rem;
+  }
+
+  .group-8--overlap .group-8__grid--reverse .group-8__content {
+    margin-left: 0;
+    margin-right: -4rem;
+  }
+
+  .group-8--overlap .group-8__grid--reverse .group-8__text-item {
+    justify-content: flex-end;
+  }
+
+  .group-8--overlap .group-8__media-item--top {
+    align-self: flex-start;
+  }
+
+  .group-8--overlap .group-8__media-item--middle {
+    align-self: center;
+  }
+
+  .group-8--overlap .group-8__media-item--bottom {
+    align-self: flex-end;
+  }
+
+  .group-8__media-item--small,
+  .group-8__media-item--large + .group-8__text-item {
+    flex-grow: 0;
+  }
+
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .grid:not(.group-8__grid--reverse)
+    .group-8__media-item:after,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .grid:not(.group-8__grid--reverse)
+    .group-8__media,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .grid:not(.group-8__grid--reverse)
+    .group-8__media
+    img,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .grid:not(.group-8__grid--reverse)
+    .group-8__media
+    .placeholder-svg,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .group-8__grid--reverse
+    .group-8__text-item:after,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .group-8__grid--reverse
+    .group-8__content,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .group-8__grid--reverse
+    .group-8__content:after {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .grid:not(.group-8__grid--reverse)
+    .group-8__text-item:after,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .grid:not(.group-8__grid--reverse)
+    .group-8__content,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .grid:not(.group-8__grid--reverse)
+    .group-8__content:after,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .group-8__grid--reverse
+    .group-8__media-item:after,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .group-8__grid--reverse
+    .group-8__media,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .group-8__grid--reverse
+    .group-8__media
+    img,
+  .group-8.collapse-corners:not(.group-8--overlap)
+    .group-8__grid--reverse
+    .group-8__media
+    .placeholder-svg {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .group-8.collapse-borders:not(.group-8--overlap)
+    .grid:not(.group-8__grid--reverse)
+    .group-8__content {
+    border-left: 0;
+  }
+
+  .group-8.collapse-borders:not(.group-8--overlap)
+    .group-8__grid--reverse
+    .group-8__content {
+    border-right: 0;
+  }
+}
+
+.group-8:not(.collapse-corners, .group-8--overlap) .group-8__media-item {
+  z-index: 2;
+}
+
+/* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
+.group-8.group-8--overlap .backround-transparent,
+.group-8:not(.group-8--overlap) .background-transparent {
+  background: transparent;
+}
+
+/* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
+.group-8 .gradient {
+  transform: perspective(0);
+}
+
+.group-8__content {
+  border-radius: var(--text-boxes-radius);
+  box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset)
+    var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
+  word-break: break-word;
+}
+
+@media screen and (min-width: 990px) {
+  .group-8__content {
+    padding: 6rem 7rem 7rem;
+  }
+}
+
+.group-8__content > * + * {
+  margin-top: 2rem;
+}
+
+.group-8__content > .group-8__text:empty ~ a {
+  margin-top: 2rem;
+}
+
+.group-8__content > :first-child:is(.group-8__heading),
+.group-8__text--caption + .group-8__heading,
+.group-8__text--caption:first-child {
+  margin-top: 0;
+}
+
+.group-8__content :last-child:is(.group-8__heading),
+.group-8__text--caption {
+  margin-bottom: 0;
+}
+
+.group-8__content .button + .group-8__text {
+  margin-top: 2rem;
+}
+
+.group-8__content .group-8__text + .button {
+  margin-top: 3rem;
+}
+
+.group-8__heading {
+  margin-bottom: 0;
+}
+
+.group-8__text p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 749px) {
+  .collapse-padding .group-8__grid .group-8__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .collapse-padding
+    .group-8__grid:not(.group-8__grid--reverse)
+    .group-8__content:not(.group-8__content--desktop-center) {
+    padding-right: 0;
+  }
+
+  .collapse-padding
+    .group-8__grid--reverse
+    .group-8__content:not(.group-8__content--desktop-center) {
+    padding-left: 0;
+  }
+}
+
+/* check for flexbox gap in older Safari versions */
+@supports not (inset: 10px) {
+  .group-8 .grid {
+    margin-left: 0;
+  }
+}
+
+/*
+  Multirow
+  note: consider removing from this stylesheet if multirow-specific styles increase signficantly
+*/
+.multirow__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--grid-mobile-vertical-spacing);
+}
+
+@media screen and (min-width: 750px) {
+  .multirow__inner {
+    row-gap: var(--grid-desktop-vertical-spacing);
+  }
+}
