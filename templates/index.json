@@ -80,6 +80,7 @@
     },
     "custom_liquid_A67FUY": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Group 8",
       "settings": {
         "custom_liquid": "",
@@ -90,6 +91,7 @@
     },
     "custom_liquid_fMCtUE": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Group 9",
       "settings": {
         "custom_liquid": "",
