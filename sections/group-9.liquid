@@ -91,7 +91,12 @@
                   <div class="d-flex-row">
                     <div class="d-flex-column">
                         
-                            {{ block.settings.text__2 | escape }}
+                            <p
+                    class="group-9__text group-9__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.text__2 | escape }}
+                  </p>
                         
                         
                     </div>
