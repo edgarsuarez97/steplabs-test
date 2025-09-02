@@ -81,10 +81,18 @@
     "group_8_4njyc9": {
       "type": "group-8",
       "blocks": {
+        "caption_qyJQdh": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_XkfA3K": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Wake Up The Muscles That Matter.",
             "heading_size": "h1"
           }
         },
@@ -110,13 +118,23 @@
             "button_link": "shopify://pages/contact",
             "button_style_secondary": true
           }
+        },
+        "caption_7TVNM8": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
         }
       },
       "block_order": [
+        "caption_qyJQdh",
         "heading_XkfA3K",
         "text_g9qpNw",
         "button_hk77DV",
-        "button_pzQMtA"
+        "button_pzQMtA",
+        "caption_7TVNM8"
       ],
       "name": "t:sections.group-8.presets.name",
       "settings": {
