@@ -197,9 +197,12 @@
           "type": "text",
           "settings": {
             "text": "",
+            "text_other_stat": "",
             "title": "BUILD LASTING STRENGTH IN JUST 3 SHORT SESSIONS A WEEK",
             "text__2": "<p>In a clinical study</p>",
             "text__3": "<h1>2.0x</h1>",
+            "text_info_other_stat": "<p>In a systematic review</p>",
+            "text_stat_other_stat": "<h1>3.2X</h1>",
             "text_style": "body",
             "text_type": "stats"
           }
@@ -207,10 +210,13 @@
         "text_3mmy8n": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "",
+            "text_other_stat": "",
             "title": "CLINICALLY SHOWN TO SPEED UP RECOVERY",
             "text__2": "<p>In a recovery study</p>",
             "text__3": "<h1>78%</h1>",
+            "text_info_other_stat": "<p>In a clinical trial</p>",
+            "text_stat_other_stat": "<h1>40-50%</h1>",
             "text_style": "body",
             "text_type": "stats"
           }
