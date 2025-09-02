@@ -196,8 +196,8 @@
         "text_AMRaGU": {
           "type": "text",
           "settings": {
-            "text": "",
-            "text_other_stat": "",
+            "text": "<p><strong>muscle strength increase vs<br/>traditional low-load training</strong></p>",
+            "text_other_stat": "<p><strong>greater muscle mass gains<br/>compared to walking or light<br/>training without Targeted<br/>Compression/BFR</strong></p>",
             "title": "BUILD LASTING STRENGTH IN JUST 3 SHORT SESSIONS A WEEK",
             "text__2": "<p>In a clinical study</p>",
             "text__3": "<h1>2.0x</h1>",
@@ -210,8 +210,8 @@
         "text_3mmy8n": {
           "type": "text",
           "settings": {
-            "text": "",
-            "text_other_stat": "",
+            "text": "<p><strong>faster muscle recovery time post-<br/>exercise with Targeted<br/>Compression/BFR compared to<br/>passive rest</strong></p>",
+            "text_other_stat": "<p><strong>pain reduction reported in<br/>individuals with chronic<br/>musculoskeletal pain</strong></p>",
             "title": "CLINICALLY SHOWN TO SPEED UP RECOVERY",
             "text__2": "<p>In a recovery study</p>",
             "text__3": "<h1>78%</h1>",
@@ -228,13 +228,22 @@
             "button_link": "shopify://pages/contact",
             "button_style_secondary": true
           }
+        },
+        "caption_r7xCFK": {
+          "type": "caption",
+          "settings": {
+            "caption": "¹Yasuda et al., 2010 ²Loenneke et al., 2012³Takarada et al., 2000 ⁴Hughes et al., 2017",
+            "text_style": "subtitle",
+            "text_size": "small"
+          }
         }
       },
       "block_order": [
         "heading_F89h3z",
         "text_AMRaGU",
         "text_3mmy8n",
-        "button_Uay3er"
+        "button_Uay3er",
+        "caption_r7xCFK"
       ],
       "name": "t:sections.group-9.presets.name",
       "settings": {
