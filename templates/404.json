@@ -17,6 +17,16 @@
     "group_8_mFV3Mn": {
       "type": "group-8",
       "blocks": {
+        "caption_6Mj7ck": {
+          "type": "caption",
+          "settings": {
+            "caption_icon": "shopify://shop_images/VectorStar.svg",
+            "caption": "Trusted by 1,000+ happy customers",
+            "svg_type": "stars",
+            "text_style": "subtitle",
+            "text_size": "small"
+          }
+        },
         "heading_TGTGbr": {
           "type": "heading",
           "settings": {
@@ -48,24 +58,26 @@
         }
       },
       "block_order": [
+        "caption_6Mj7ck",
         "heading_TGTGbr",
         "text_PBeGLP",
         "button_nPLNye"
       ],
       "name": "t:sections.group-8.presets.name",
       "settings": {
+        "image": "shopify://shop_images/94ce6db994428014172684a7824da9a4cd0b55ac.png",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "section_color_scheme": "scheme-30972438-6ada-4861-be2b-dbdc0e5c81bf",
+        "color_scheme": "scheme-30972438-6ada-4861-be2b-dbdc0e5c81bf",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
