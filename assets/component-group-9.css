@@ -359,6 +359,16 @@
   border-radius: 50px;
 }
 
+.group-9__content .d-flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.group-9__content .d-flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
 .group-9__content .button:after {
   content: '';
   position: absolute;
