@@ -348,7 +348,7 @@
   display: ruby;
 }
 
-.group-8__content .d-flex .flex-row{
+.group-8__content .d-flex{
   display: flex;
   flex-direction: row;
 }
