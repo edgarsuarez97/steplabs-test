@@ -375,6 +375,7 @@
 .group-9__content .d-flex-row{
   display: flex;
   flex-direction: row;
+  column-gap: 10rem;
 }
 
 .group-9__content .d-flex-column{
