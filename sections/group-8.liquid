@@ -137,7 +137,7 @@
                      }}
                      {%- endif %}
                      <div class="group-8__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                    {{ block.settings.text }}
+                    {{ block.settings.text__2 }}
                   </div>
                     </div>
                     <div>
@@ -147,7 +147,7 @@
                      }}
                      {%- endif %}
                      <div class="group-8__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                    {{ block.settings.text }}
+                    {{ block.settings.text__3 }}
                   </div>
                     </div>
                   </div>
@@ -546,6 +546,18 @@
           "id": "text",
           "default": "t:sections.group-8.blocks.text.settings.text.default",
           "label": "t:sections.group-8.blocks.text.settings.text.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text__2",
+          "default": "t:sections.group-8.blocks.text.settings.text__2.default",
+          "label": "t:sections.group-8.blocks.text.settings.text__2.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text__3",
+          "default": "t:sections.group-8.blocks.text.settings.text__3.default",
+          "label": "t:sections.group-8.blocks.text.settings.text__3.label"
         },
         {
           "type": "select",
