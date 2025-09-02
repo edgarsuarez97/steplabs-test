@@ -81,26 +81,10 @@
                     {{ block.settings.caption | escape }}
                   </p>
                 {%- when 'text' -%}
-                  {%- if block.settings.text_type == 'text' -%}
-                  <div class="group-9__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                <div class="group-9__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
                   </div>
-                  {%- else -%}
-                  {{ block.settings.title }}
-                  <hr>
-                  <div class="d-flex-row">
-                    <div class="d-flex-column">
-                        <p
-                            class="group-9__text group-9__text--caption"
-                            {{ block.shopify_attributes }}
-                        >
-                            {{ block.settings.text__2 | escape }}
-                        </p>
-                    </div>
-                    
-                  </div>
-                 
-                  {%- endif -%}
+                  
                 {%- when 'button' -%}
                   {%- if block.settings.button_label != blank -%}
                     <a
@@ -480,7 +464,7 @@
               "label": "t:sections.group-9.blocks.text.settings.text_type.options__1.label"
             },
             {
-              "value": "details",
+              "value": "stats",
               "label": "t:sections.group-9.blocks.text.settings.text_type.options__2.label"
             }
           ],
