@@ -348,6 +348,10 @@
   display: ruby;
 }
 
+.group-8__content .mr-2 {
+  display: ruby;
+}
+
 .group-8__content .d-flex-row{
   display: flex;
   flex-direction: row;

@@ -120,7 +120,7 @@
                   </div>
                   {%- else -%}
                   <div class="d-flex-row">
-                    <div class="d-ruby">
+                    <div class="d-ruby mr-2">
                     {%- if block.settings.icon_darts != blank -%}
                     {{
                         block.settings.icon_darts | image_url | img_tag: 'Describe', width: 100
@@ -130,7 +130,7 @@
                         {{ block.settings.text }}
                     </div>
                     </div>
-                    <div class="d-ruby">
+                    <div class="d-ruby mr-2">
                     {%- if block.settings.icon_arrows != blank -%}
                     {{
                         block.settings.icon_arrows | image_url | img_tag: 'Describe', width: 100
