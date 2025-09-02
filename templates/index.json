@@ -84,7 +84,7 @@
         "caption_qyJQdh": {
           "type": "caption",
           "settings": {
-            "caption": "Add a tagline",
+            "caption": "Trusted by 1,000+ happy customers",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -99,14 +99,14 @@
         "text_g9qpNw": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Suji delivers science-backed targeted compression —<br/>pain relief, muscle activation, and lasting strength in<br/>minutes, right from home.</p>",
             "text_style": "body"
           }
         },
         "button_hk77DV": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Try Suji",
             "button_link": "shopify://pages/contact",
             "button_style_secondary": false
           }
@@ -114,7 +114,7 @@
         "button_pzQMtA": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "How It Works",
             "button_link": "shopify://pages/contact",
             "button_style_secondary": true
           }
