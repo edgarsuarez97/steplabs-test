@@ -336,7 +336,7 @@
   }
 }
 
-.group-8__content .d-flex .flex-row{
+.group-8__content > .d-flex .flex-row{
   display: flex;
   flex-direction: row;
 }
