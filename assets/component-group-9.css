@@ -346,6 +346,7 @@
 .group-9__content .border-bottom{
   border-bottom: solid 1px;
   padding-bottom: 11px;
+  width: 100%;
 }
 
 .group-9__content > * + * {
