@@ -1606,6 +1606,9 @@
         "caption": {
           "name": "Caption",
           "settings": {
+            "caption_icon":{
+              "label": "Icon"
+            },
             "text": {
               "label": "Text",
               "default": "Add a tagline"
@@ -1648,6 +1651,24 @@
               "options__2": {
                 "label": "Subtitle"
               }
+            },
+            "text_type": {
+              "label": "Type",
+              "options__1": {
+                "label": "Text"
+              },
+              "options__2": {
+                "label": "Details"
+              }
+            },
+            "icon_darts":{
+              "label": "Icon"
+            },
+            "icon_arrows":{
+              "label": "Icon"
+            },
+            "icon_shields":{
+              "label": "Icon"
             }
           }
         },

@@ -74,16 +74,73 @@
                     {{ block.settings.heading }}
                   </h2>
                 {%- when 'caption' -%}
+                    {%- if block.settings.svg_type == 'single' -%}
+                    {{
+                        block.settings.caption_icon
+                        | image_url:
+                     }}
                   <p
                     class="group-8__text group-8__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.caption | escape }}
                   </p>
+                  {%- else -%}
+                    {{
+                        block.settings.caption_icon
+                        | image_url:
+                     }}
+                     {{
+                        block.settings.caption_icon
+                        | image_url:
+                     }}
+                     {{
+                        block.settings.caption_icon
+                        | image_url:
+                     }}
+                     {{
+                        block.settings.caption_icon
+                        | image_url:
+                     }}
+                     {{
+                        block.settings.caption_icon
+                        | image_url:
+                     }}
+                  <p
+                    class="group-8__text group-8__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.caption | escape }}
+                  </p>
+                  {%- endif %}
                 {%- when 'text' -%}
+                  {%- if block.settings.text_type == 'text' -%}
+                  <svg ></svg>
                   <div class="group-8__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
                   </div>
+                  {%- else -%}
+                  <div>
+                    <div>
+                    {{
+                        block.settings.text_icon_darts
+                        | image_url:
+                     }}
+                    </div>
+                    <div>
+                    {{
+                        block.settings.text_icon_arrows
+                        | image_url:
+                     }}
+                    </div>
+                    <div>
+                    {{
+                        block.settings.text_icon_shield
+                        | image_url:
+                     }}
+                    </div>
+                  </div>
+                  {%- endif -%}
                 {%- when 'button' -%}
                   {%- if block.settings.button_label != blank -%}
                     {%- if block.settings.button_style == 'rows' -%}
@@ -405,10 +462,31 @@
       "name": "t:sections.group-8.blocks.caption.name",
       "settings": [
         {
+            "type": "image_picker",
+            "id": "caption_icon",
+            "label": "t:sections.group-8.settings.caption_icon.label"
+        },
+        {
           "type": "text",
           "id": "caption",
           "default": "t:sections.group-8.blocks.caption.settings.text.default",
           "label": "t:sections.group-8.blocks.caption.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "svg_type",
+          "options": [
+            {
+              "value": "single",
+              "label": "t:sections.group-8.blocks.caption.settings.svg_type.options__1.label"
+            },
+            {
+              "value": "many",
+              "label": "t:sections.group-8.blocks.caption.settings.svg_type.options__2.label"
+            }
+          ],
+          "default": "single",
+          "label": "t:sections.group-8.blocks.caption.settings.svg_type.label"
         },
         {
           "type": "select",
@@ -473,7 +551,38 @@
           ],
           "default": "body",
           "label": "t:sections.group-8.blocks.text.settings.text_style.label"
-        }
+        },
+        {
+          "type": "select",
+          "id": "text_type",
+          "options": [
+            {
+              "value": "text",
+              "label": "t:sections.group-8.blocks.text.settings.text_type.options__1.label"
+            },
+            {
+              "value": "details",
+              "label": "t:sections.group-8.blocks.text.settings.text_type.options__2.label"
+            }
+          ],
+          "default": "text",
+          "label": "t:sections.group-8.blocks.text.settings.text_type.label"
+        },
+        {
+            "type": "image_picker",
+            "id": "icon_darts",
+            "label": "t:sections.group-8.settings.icon_darts.label"
+        },
+        {
+            "type": "image_picker",
+            "id": "icon_arrows",
+            "label": "t:sections.group-8.settings.icon_arrows.label"
+        },
+        {
+            "type": "image_picker",
+            "id": "icon_shield",
+            "label": "t:sections.group-8.settings.icon_shield.label"
+        },
       ]
     },
     {
