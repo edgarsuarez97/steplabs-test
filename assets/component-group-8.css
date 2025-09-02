@@ -336,11 +336,6 @@
   }
 }
 
-.d-flex .flex-row{
-  display: flex;
-  flex-direction: row;
-}
-
 .group-8__content > * + * {
   margin-top: 2rem;
 }
@@ -351,6 +346,11 @@
 
 .group-8__content .d-ruby {
   display: ruby;
+}
+
+.group-8__content .d-flex .flex-row{
+  display: flex;
+  flex-direction: row;
 }
 
 .group-8__content .group-8__text--caption .single-icon {
