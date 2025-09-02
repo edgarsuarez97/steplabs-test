@@ -193,6 +193,17 @@
             "heading_size": "h1"
           }
         },
+        "text_7NmGM3": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "title": "BUILD LASTING STRENGTH IN JUST 3 SHORT SESSIONS A WEEK",
+            "text__2": "",
+            "text__3": "<p>5000</p>",
+            "text_style": "body",
+            "text_type": "stats"
+          }
+        },
         "button_Uay3er": {
           "type": "button",
           "settings": {
@@ -204,6 +215,7 @@
       },
       "block_order": [
         "heading_F89h3z",
+        "text_7NmGM3",
         "button_Uay3er"
       ],
       "name": "t:sections.group-9.presets.name",
