@@ -1584,7 +1584,7 @@
           "label": "Mobile alignment"
         }
       },
-      "blocks": {
+      "blocks": [{
         "heading": {
           "name": "Heading",
           "settings": {
@@ -1658,7 +1658,7 @@
             }
           }
         }
-      },
+      }],
       "presets": {
         "name": "Group 8"
       }
@@ -1757,7 +1757,7 @@
           "label": "Mobile alignment"
         }
       },
-      "blocks": {
+      "blocks": [{
         "heading": {
           "name": "Heading",
           "settings": {
@@ -1831,7 +1831,7 @@
             }
           }
         }
-      },
+      }],
       "presets": {
         "name": "Group 9"
       }
