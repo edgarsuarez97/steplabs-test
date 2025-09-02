@@ -355,6 +355,15 @@
   margin-bottom: 0;
 }
 
+.group-8__content .button {
+  border-radius: 50px;
+}
+
+.group-8__content .button .ml-1{
+  border-radius: 50px;
+  margin-left: 1rem;
+}
+
 .group-8__content .button + .group-8__text {
   margin-top: 2rem;
 }

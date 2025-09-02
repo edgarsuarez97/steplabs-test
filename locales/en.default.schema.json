@@ -1664,6 +1664,15 @@
             },
             "outline_button": {
               "label": "Outline style"
+            },
+            "button_style": {
+              "label": "Style",
+              "options__1": {
+                "label": "Columns"
+              },
+              "options__2": {
+                "label": "Rows"
+              }
             }
           }
         }

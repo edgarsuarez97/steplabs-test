@@ -86,6 +86,7 @@
                   </div>
                 {%- when 'button' -%}
                   {%- if block.settings.button_label != blank -%}
+                    {%- if block.settings.button_style == 'rows' -%}
                     <a
                       {% if block.settings.button_link == blank %}
                         role="link" aria-disabled="true"
@@ -97,6 +98,21 @@
                     >
                       {{ block.settings.button_label | escape }}
                     </a>
+                    {%- else -%}
+                    <div>
+                        <a
+                        {% if block.settings.button_link == blank %}
+                            role="link" aria-disabled="true"
+                        {% else %}
+                            href="{{ block.settings.button_link }}"
+                        {% endif %}
+                        class="button{% if block.settings.button_style_secondary %} button--secondary ml-1{% else %} button--primary{% endif %}"
+                        {{ block.shopify_attributes }}
+                        >
+                        {{ block.settings.button_label | escape }}
+                        </a>
+                    </div>
+                    {%- endif -%}
                   {%- endif -%}
               {%- endcase -%}
             {%- endfor -%}
@@ -435,6 +451,46 @@
           ],
           "default": "body",
           "label": "t:sections.group-8.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:sections.group-8.blocks.button.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "t:sections.group-8.blocks.button.settings.button_label.default",
+          "label": "t:sections.group-8.blocks.button.settings.button_label.label",
+          "info": "t:sections.group-8.blocks.button.settings.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.group-8.blocks.button.settings.button_link.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "t:sections.group-8.blocks.button.settings.outline_button.label"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "columns",
+              "label": "t:sections.group-8.blocks.text.settings.button_style.options__1.label"
+            },
+            {
+              "value": "rows",
+              "label": "t:sections.group-8.blocks.text.settings.button_style.options__2.label"
+            }
+          ],
+          "default": "inline",
+          "label": "t:sections.group-8.blocks.text.settings.button_style.label"
         }
       ]
     },
