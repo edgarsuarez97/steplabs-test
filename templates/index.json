@@ -149,8 +149,8 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-30972438-6ada-4861-be2b-dbdc0e5c81bf",
         "color_scheme": "scheme-30972438-6ada-4861-be2b-dbdc0e5c81bf",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "group_9_mGnLXE": {
