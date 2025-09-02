@@ -1869,7 +1869,7 @@
           "settings": {
             "title": {
               "label": "Title",
-              "default": "<h3>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</h3>"
+              "default": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review."
             },
             "text": {
               "label": "Text",
@@ -1881,7 +1881,7 @@
             },
             "text__3": {
               "label": "Stat",
-              "default": "<h2>5000</h2>"
+              "default": "5000"
             },
             "text_style": {
               "label": "Style",
