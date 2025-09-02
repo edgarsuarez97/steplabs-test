@@ -377,6 +377,10 @@
   border-radius: 50px;
 }
 
+.group-8__content .button .m-1 {
+  margin: 0.5rem;
+}
+
 .group-8__content .button:after {
   content: '';
   position: absolute;
