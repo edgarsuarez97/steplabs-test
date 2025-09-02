@@ -102,6 +102,8 @@
           "type": "text",
           "settings": {
             "text": "<p>Suji delivers science-backed targeted compression—pain relief, muscle activation, and lasting strength in minutes, right from home.</p>",
+            "text__2": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text__3": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body",
             "text_type": "text"
           }
@@ -145,6 +147,8 @@
           "type": "text",
           "settings": {
             "text": "<p>Activates Muscles <br/>& Builds Strength</p>",
+            "text__2": "<p>Boosts Recovery <br/>&Circulation</p>",
+            "text__3": "<p>Supports Healthy <br/>Joints & Movement</p>",
             "text_style": "body",
             "text_type": "details",
             "icon_darts": "shopify://shop_images/VectorDarts.svg",
