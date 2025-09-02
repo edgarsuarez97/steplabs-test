@@ -100,15 +100,15 @@
                         {{ block.settings.button_label | escape }}
                         </a>
                         <a
-                        {% if block.settings.button_link_2 == blank %}
+                        {% if block.settings.button_link_two == blank %}
                             role="link" aria-disabled="true"
                         {% else %}
-                            href="{{ block.settings.button_link_2 }}"
+                            href="{{ block.settings.button_link_two }}"
                         {% endif %}
-                        class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                        class="button{% if block.settings.button_style_secondary_two %} button--secondary{% else %} button--primary{% endif %}"
                         {{ block.shopify_attributes }}
                         >
-                        {{ block.settings.button_label_2 | escape }}
+                        {{ block.settings.button_label_two | escape }}
                         </a>
                     {%- else -%}
                     <div>
@@ -124,15 +124,15 @@
                         {{ block.settings.button_label | escape }}
                         </a>
                         <a
-                        {% if block.settings.button_link_2 == blank %}
+                        {% if block.settings.button_link_two == blank %}
                             role="link" aria-disabled="true"
                         {% else %}
-                            href="{{ block.settings.button_link_2 }}"
+                            href="{{ block.settings.button_link_two }}"
                         {% endif %}
-                        class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                        class="button{% if block.settings.button_style_secondary_two %} button--secondary{% else %} button--primary{% endif %}"
                         {{ block.shopify_attributes }}
                         >
-                        {{ block.settings.button_label_2 | escape }}
+                        {{ block.settings.button_label_two | escape }}
                         </a>
                     </div>
                     {%- endif -%}
@@ -490,10 +490,10 @@
         },
         {
           "type": "text",
-          "id": "button_label_2",
-          "default": "t:sections.group-8.blocks.button.settings.button_label_2.default",
-          "label": "t:sections.group-8.blocks.button.settings.button_label_2.label",
-          "info": "t:sections.group-8.blocks.button.settings.button_label_2.info"
+          "id": "button_label_two",
+          "default": "t:sections.group-8.blocks.button.settings.button_label_two.default",
+          "label": "t:sections.group-8.blocks.button.settings.button_label_two.label",
+          "info": "t:sections.group-8.blocks.button.settings.button_label_two.info"
         },
         {
           "type": "url",
@@ -502,8 +502,8 @@
         },
         {
           "type": "url",
-          "id": "button_link_2",
-          "label": "t:sections.group-8.blocks.button.settings.button_link_2.label"
+          "id": "button_link_two",
+          "label": "t:sections.group-8.blocks.button.settings.button_link_two.label"
         },
         {
           "type": "checkbox",
@@ -513,9 +513,9 @@
         },
         {
           "type": "checkbox",
-          "id": "button_style_secondary_2",
+          "id": "button_style_secondary_two",
           "default": false,
-          "label": "t:sections.group-8.blocks.button.settings.outline_button_2.label"
+          "label": "t:sections.group-8.blocks.button.settings.outline_button_two.label"
         },
         {
           "type": "select",

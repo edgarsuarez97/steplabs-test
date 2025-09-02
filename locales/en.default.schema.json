@@ -1659,7 +1659,7 @@
               "info": "Leave blank to hide",
               "default": "Button label"
             },
-            "button_label_2":{
+            "button_label_two":{
               "label": "Label",
               "info": "Leave blank to hide",
               "default": "Button label"
@@ -1667,13 +1667,13 @@
             "button_link": {
               "label": "Link"
             },
-            "button_link_2": {
+            "button_link_two": {
               "label": "Link"
             },
             "outline_button": {
               "label": "Outline style"
             },
-            "outline_button_2": {
+            "outline_button_two": {
               "label": "Outline style"
             },
             "button_style": {
