@@ -1883,6 +1883,18 @@
               "label": "Stat",
               "default": "5000"
             },
+            "text_other_stat": {
+              "label": "Text",
+              "default": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review."
+            },
+            "text_info_other_stat": {
+              "label": "Text Info",
+              "default": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review."
+            },
+            "text_stat_other_stat": {
+              "label": "Stat",
+              "default": "5000"
+            },
             "text_style": {
               "label": "Style",
               "options__1": {

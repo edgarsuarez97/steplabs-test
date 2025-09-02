@@ -101,20 +101,26 @@
                   >
                     {{ block.settings.text__3 }}
                   </h3>
+                  <div class="group-9__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                    <p>{{ block.settings.text }}</p>
+                  </div>
                   </div>
                         
                     </div>
                     <div class="d-flex-column">
                         <div class="group-9__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                            <p>{{ block.settings.text__2 }}</p>
+                            <p>{{ block.settings.text_info_other_stat }}</p>
                         </div>
                         <div class="group-9__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                     <h3
                     class="group-9__heading inline-richtext"
                     {{ block.shopify_attributes }}
                   >
-                    {{ block.settings.text__3 }}
+                    {{ block.settings.text_stat_other_stat }}
                   </h3>
+                  <div class="group-9__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                    <p>{{ block.settings.text_other_stat }}</p>
+                  </div>
                   </div>
                         
                     </div>
@@ -459,6 +465,12 @@
           "label": "t:sections.group-9.blocks.text.settings.text.label"
         },
         {
+          "type": "richtext",
+          "id": "text_other_stat",
+          "default": "t:sections.group-9.blocks.text.settings.text_other_stat.default",
+          "label": "t:sections.group-9.blocks.text.settings.text_other_stat.label"
+        },
+        {
           "type": "inline_richtext",
           "id": "title",
           "default": "t:sections.group-9.blocks.text.settings.title.default",
@@ -475,6 +487,18 @@
           "id": "text__3",
           "default": "t:sections.group-9.blocks.text.settings.text__3.default",
           "label": "t:sections.group-9.blocks.text.settings.text__3.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_info_other_stat",
+          "default": "t:sections.group-9.blocks.text.settings.text_info_other_stat.default",
+          "label": "t:sections.group-9.blocks.text.settings.text_info_other_stat.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_stat_other_stat",
+          "default": "t:sections.group-9.blocks.text.settings.text_stat_other_stat.default",
+          "label": "t:sections.group-9.blocks.text.settings.text_stat_other_stat.label"
         },
         {
           "type": "select",
