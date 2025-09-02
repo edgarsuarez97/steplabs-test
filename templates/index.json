@@ -107,8 +107,11 @@
           "type": "button",
           "settings": {
             "button_label": "Try Suji",
+            "button_label_two": "How It Works",
             "button_link": "shopify://pages/contact",
+            "button_link_two": "shopify://pages/contact",
             "button_style_secondary": false,
+            "button_style_secondary_two": true,
             "button_style": "columns"
           }
         },
@@ -117,8 +120,11 @@
           "disabled": true,
           "settings": {
             "button_label": "How It Works",
+            "button_label_two": "Button label",
             "button_link": "shopify://pages/contact",
+            "button_link_two": "",
             "button_style_secondary": true,
+            "button_style_secondary_two": false,
             "button_style": "columns"
           }
         },
