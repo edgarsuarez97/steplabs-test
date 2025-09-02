@@ -13,76 +13,9 @@
       "type": "main-404",
       "disabled": true,
       "settings": {}
-    },
-    "group_8_mFV3Mn": {
-      "type": "group-8",
-      "blocks": {
-        "caption_6Mj7ck": {
-          "type": "caption",
-          "settings": {
-            "caption_icon": "shopify://shop_images/VectorStar.svg",
-            "caption": "Trusted by 1,000+ happy customers",
-            "svg_type": "stars",
-            "text_style": "subtitle",
-            "text_size": "small"
-          }
-        },
-        "heading_TGTGbr": {
-          "type": "heading",
-          "settings": {
-            "heading": "Wake Up The <em>Muscles That Matter.</em>",
-            "heading_size": "h1"
-          }
-        },
-        "text_PBeGLP": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Suji delivers science-backed targeted compression —<br/>pain relief, muscle activation, and lasting strength in<br/>minutes, right from home.</p>",
-            "text__2": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text__3": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body",
-            "text_type": "text"
-          }
-        },
-        "button_nPLNye": {
-          "type": "button",
-          "settings": {
-            "button_label": "Try Suji",
-            "button_label_two": "How It Works",
-            "button_link": "shopify://pages/contact",
-            "button_link_two": "shopify://pages/contact",
-            "button_style_secondary": false,
-            "button_style_secondary_two": true,
-            "button_style": "columns"
-          }
-        }
-      },
-      "block_order": [
-        "caption_6Mj7ck",
-        "heading_TGTGbr",
-        "text_PBeGLP",
-        "button_nPLNye"
-      ],
-      "name": "t:sections.group-8.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/94ce6db994428014172684a7824da9a4cd0b55ac.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-30972438-6ada-4861-be2b-dbdc0e5c81bf",
-        "color_scheme": "scheme-30972438-6ada-4861-be2b-dbdc0e5c81bf",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
-    "main",
-    "group_8_mFV3Mn"
+    "main"
   ]
 }
