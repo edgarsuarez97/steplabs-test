@@ -65,7 +65,6 @@
             class="group-8__content group-8__content--{{ section.settings.desktop_content_position }} group-8__content--desktop-{{ section.settings.desktop_content_alignment }} group-8__content--mobile-{{ section.settings.mobile_content_alignment }} group-8__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
           >
             {%- for block in section.blocks -%}
-              {%- assign count = 0 -%}
               {% case block.type %}
                 {%- when 'heading' -%}
                   <h2
@@ -86,7 +85,7 @@
                     {{ block.settings.text }}
                   </div>
                 {%- when 'button' -%}
-                    {%- if block.settings.button_label != blank && block.settings.button_label_2 != blank -%}
+                  {%- if block.settings.button_label != blank -%}
                     {%- if block.settings.button_style == 'rows' -%}
                         <a
                         {% if block.settings.button_link == blank %}
@@ -118,7 +117,7 @@
                         {% else %}
                             href="{{ block.settings.button_link }}"
                         {% endif %}
-                        class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                        class="button{% if block.settings.button_style_secondary %} button--secondary ml-1{% else %} button--primary{% endif %}"
                         {{ block.shopify_attributes }}
                         >
                         {{ block.settings.button_label | escape }}
