@@ -74,7 +74,7 @@
                     {{ block.settings.heading }}
                   </h2>
                 {%- when 'caption' -%}
-                <div>
+                <div class="d-ruby">
                     {%- if block.settings.svg_type == 'single' -%}
                     {%- if block.settings.caption_icon != blank -%}
                     {{
@@ -82,7 +82,7 @@
                      }}
                     {%- endif -%}
                   <p
-                    class="group-8__text group-8__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
+                    class="group-8__text group-8__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }} single-icon"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.caption | escape }}
@@ -106,7 +106,7 @@
                      }}
                      {%- endif -%}
                   <p
-                    class="group-8__text group-8__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
+                    class="group-8__text group-8__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }} stars-icon"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.caption | escape }}

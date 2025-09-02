@@ -344,6 +344,20 @@
   margin-top: 2rem;
 }
 
+.group-8__content .d-ruby {
+  display: ruby;
+}
+
+.group-8__content .group-8__text--caption .single-icon {
+  margin-top: 0;
+  vertical-align: top;
+}
+
+
+.group-8__content .group-8__text--caption .stars-icon {
+  margin-top: 0;
+}
+
 .group-8__content > :first-child:is(.group-8__heading),
 .group-8__text--caption + .group-8__heading,
 .group-8__text--caption:first-child {
