@@ -65,6 +65,7 @@
             class="group-8__content group-8__content--{{ section.settings.desktop_content_position }} group-8__content--desktop-{{ section.settings.desktop_content_alignment }} group-8__content--mobile-{{ section.settings.mobile_content_alignment }} group-8__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
           >
             {%- for block in section.blocks -%}
+              {%- assign count = 0 -%}
               {% case block.type %}
                 {%- when 'heading' -%}
                   <h2
@@ -85,19 +86,30 @@
                     {{ block.settings.text }}
                   </div>
                 {%- when 'button' -%}
-                  {%- if block.settings.button_label != blank -%}
+                    {%- if block.settings.button_label != blank && block.settings.button_label_2 != blank -%}
                     {%- if block.settings.button_style == 'rows' -%}
-                    <a
-                      {% if block.settings.button_link == blank %}
-                        role="link" aria-disabled="true"
-                      {% else %}
-                        href="{{ block.settings.button_link }}"
-                      {% endif %}
-                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-                      {{ block.shopify_attributes }}
-                    >
-                      {{ block.settings.button_label | escape }}
-                    </a>
+                        <a
+                        {% if block.settings.button_link == blank %}
+                            role="link" aria-disabled="true"
+                        {% else %}
+                            href="{{ block.settings.button_link }}"
+                        {% endif %}
+                        class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                        {{ block.shopify_attributes }}
+                        >
+                        {{ block.settings.button_label | escape }}
+                        </a>
+                        <a
+                        {% if block.settings.button_link_2 == blank %}
+                            role="link" aria-disabled="true"
+                        {% else %}
+                            href="{{ block.settings.button_link_2 }}"
+                        {% endif %}
+                        class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                        {{ block.shopify_attributes }}
+                        >
+                        {{ block.settings.button_label_2 | escape }}
+                        </a>
                     {%- else -%}
                     <div>
                         <a
@@ -106,10 +118,21 @@
                         {% else %}
                             href="{{ block.settings.button_link }}"
                         {% endif %}
-                        class="button{% if block.settings.button_style_secondary %} button--secondary ml-1{% else %} button--primary{% endif %}"
+                        class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
                         {{ block.shopify_attributes }}
                         >
                         {{ block.settings.button_label | escape }}
+                        </a>
+                        <a
+                        {% if block.settings.button_link_2 == blank %}
+                            role="link" aria-disabled="true"
+                        {% else %}
+                            href="{{ block.settings.button_link_2 }}"
+                        {% endif %}
+                        class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                        {{ block.shopify_attributes }}
+                        >
+                        {{ block.settings.button_label_2 | escape }}
                         </a>
                     </div>
                     {%- endif -%}
@@ -466,15 +489,33 @@
           "info": "t:sections.group-8.blocks.button.settings.button_label.info"
         },
         {
+          "type": "text",
+          "id": "button_label_2",
+          "default": "t:sections.group-8.blocks.button.settings.button_label_2.default",
+          "label": "t:sections.group-8.blocks.button.settings.button_label_2.label",
+          "info": "t:sections.group-8.blocks.button.settings.button_label_2.info"
+        },
+        {
           "type": "url",
           "id": "button_link",
           "label": "t:sections.group-8.blocks.button.settings.button_link.label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "t:sections.group-8.blocks.button.settings.button_link_2.label"
         },
         {
           "type": "checkbox",
           "id": "button_style_secondary",
           "default": false,
           "label": "t:sections.group-8.blocks.button.settings.outline_button.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary_2",
+          "default": false,
+          "label": "t:sections.group-8.blocks.button.settings.outline_button_2.label"
         },
         {
           "type": "select",

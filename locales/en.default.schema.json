@@ -1652,9 +1652,14 @@
           }
         },
         "button": {
-          "name": "Button",
+          "name": "Buttons",
           "settings": {
             "button_label": {
+              "label": "Label",
+              "info": "Leave blank to hide",
+              "default": "Button label"
+            },
+            "button_label_2":{
               "label": "Label",
               "info": "Leave blank to hide",
               "default": "Button label"
@@ -1662,7 +1667,13 @@
             "button_link": {
               "label": "Link"
             },
+            "button_link_2": {
+              "label": "Link"
+            },
             "outline_button": {
+              "label": "Outline style"
+            },
+            "outline_button_2": {
               "label": "Outline style"
             },
             "button_style": {
