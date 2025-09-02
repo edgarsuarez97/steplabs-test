@@ -163,13 +163,6 @@
             "heading_size": "h1"
           }
         },
-        "text_7MB9CG": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        },
         "button_Uay3er": {
           "type": "button",
           "settings": {
@@ -181,7 +174,6 @@
       },
       "block_order": [
         "heading_F89h3z",
-        "text_7MB9CG",
         "button_Uay3er"
       ],
       "name": "t:sections.group-9.presets.name",
