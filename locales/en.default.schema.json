@@ -1622,6 +1622,15 @@
                 "label": "Uppercase"
               }
             },
+            "svg_type": {
+              "label": "Type Icon",
+              "options__1": {
+                "label": "Single"
+              },
+              "options__2": {
+                "label": "Stars"
+              }
+            },
             "caption_size": {
               "label": "Size",
               "options__1": {
