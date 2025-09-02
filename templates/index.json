@@ -102,15 +102,25 @@
             "button_link": "shopify://pages/contact",
             "button_style_secondary": false
           }
+        },
+        "button_pzQMtA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": true
+          }
         }
       },
       "block_order": [
         "heading_XkfA3K",
         "text_g9qpNw",
-        "button_hk77DV"
+        "button_hk77DV",
+        "button_pzQMtA"
       ],
       "name": "t:sections.group-8.presets.name",
       "settings": {
+        "image": "shopify://shop_images/94ce6db994428014172684a7824da9a4cd0b55ac.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
