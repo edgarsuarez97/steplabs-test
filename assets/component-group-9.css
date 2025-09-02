@@ -378,6 +378,11 @@
   column-gap: 10rem;
 }
 
+.group-9__content .big-text{
+  margin:0;
+  font-size: 10rem;
+}
+
 .group-9__content .d-flex-column{
   display: flex;
   flex-direction: column;
