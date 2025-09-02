@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "settings_schema": {
     "global": {
@@ -1584,7 +1593,7 @@
           "label": "Mobile alignment"
         }
       },
-      "blocks": [{
+      "blocks": {
         "heading": {
           "name": "Heading",
           "settings": {
@@ -1658,7 +1667,7 @@
             }
           }
         }
-      }],
+      },
       "presets": {
         "name": "Group 8"
       }
@@ -1757,7 +1766,7 @@
           "label": "Mobile alignment"
         }
       },
-      "blocks": [{
+      "blocks": {
         "heading": {
           "name": "Heading",
           "settings": {
@@ -1831,7 +1840,7 @@
             }
           }
         }
-      }],
+      },
       "presets": {
         "name": "Group 9"
       }
