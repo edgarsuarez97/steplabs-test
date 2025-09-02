@@ -30,14 +30,14 @@
         "heading_TGTGbr": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Wake Up The <em>Muscles That Matter.</em>",
             "heading_size": "h1"
           }
         },
         "text_PBeGLP": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Suji delivers science-backed targeted compression —<br/>pain relief, muscle activation, and lasting strength in<br/>minutes, right from home.</p>",
             "text__2": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text__3": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body",
@@ -47,12 +47,12 @@
         "button_nPLNye": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_label_two": "Button label",
-            "button_link": "",
-            "button_link_two": "",
+            "button_label": "Try Suji",
+            "button_label_two": "How It Works",
+            "button_link": "shopify://pages/contact",
+            "button_link_two": "shopify://pages/contact",
             "button_style_secondary": false,
-            "button_style_secondary_two": false,
+            "button_style_secondary_two": true,
             "button_style": "columns"
           }
         }
