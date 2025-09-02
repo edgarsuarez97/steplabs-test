@@ -64,7 +64,7 @@
             id="ImageWithText--{{ section.id }}"
             class="group-8__content group-8__content--{{ section.settings.desktop_content_position }} group-8__content--desktop-{{ section.settings.desktop_content_alignment }} group-8__content--mobile-{{ section.settings.mobile_content_alignment }} group-8__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
           >
-            {%- content_for block in section.blocks -%}
+            {%- for block in section.blocks -%}
               {% case block.type %}
                 {%- when 'heading' -%}
                   <h2
