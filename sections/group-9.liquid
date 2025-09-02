@@ -83,11 +83,10 @@
                 {%- when 'text' -%}
                 {%- if block.settings.text_type == 'text' -%}
                   <div class="group-9__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                    {{ block.settings.text }}
+                    <p>{{ block.settings.text }}</p>
                   </div>
                   {%- else -%}
                   <h3>{{ block.settings.title }}</h3>
-                  
                   <hr>
                   <div class="d-flex-row">
                     <div class="d-flex-column">
