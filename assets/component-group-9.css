@@ -343,6 +343,11 @@
   }
 }
 
+.group-9__content .border-bottom{
+  border-bottom: 1px;
+  padding-bottom: 11px;
+}
+
 .group-9__content > * + * {
   margin-top: 2rem;
 }
