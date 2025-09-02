@@ -84,7 +84,9 @@
         "caption_qyJQdh": {
           "type": "caption",
           "settings": {
+            "caption_icon": "shopify://shop_images/VectorStar.svg",
             "caption": "Trusted by 1,000+ happy customers",
+            "svg_type": "stars",
             "text_style": "subtitle",
             "text_size": "small"
           }
@@ -100,7 +102,8 @@
           "type": "text",
           "settings": {
             "text": "<p>Suji delivers science-backed targeted compression—pain relief, muscle activation, and lasting strength in minutes, right from home.</p>",
-            "text_style": "body"
+            "text_style": "body",
+            "text_type": "text"
           }
         },
         "button_hk77DV": {
@@ -131,9 +134,22 @@
         "caption_7TVNM8": {
           "type": "caption",
           "settings": {
+            "caption_icon": "shopify://shop_images/Clock.svg",
             "caption": "30-day money back guarantee",
+            "svg_type": "single",
             "text_style": "subtitle",
             "text_size": "small"
+          }
+        },
+        "text_6tmQCA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Activates Muscles <br/>& Builds Strength</p>",
+            "text_style": "body",
+            "text_type": "details",
+            "icon_darts": "shopify://shop_images/VectorDarts.svg",
+            "icon_arrows": "shopify://shop_images/VectorArrows.svg",
+            "icon_shield": "shopify://shop_images/VectorShield.svg"
           }
         }
       },
@@ -143,7 +159,8 @@
         "text_g9qpNw",
         "button_hk77DV",
         "button_pzQMtA",
-        "caption_7TVNM8"
+        "caption_7TVNM8",
+        "text_6tmQCA"
       ],
       "name": "t:sections.group-8.presets.name",
       "settings": {
