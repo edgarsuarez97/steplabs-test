@@ -85,8 +85,8 @@
           "type": "caption",
           "settings": {
             "caption": "Trusted by 1,000+ happy customers",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "text_style": "subtitle",
+            "text_size": "small"
           }
         },
         "heading_XkfA3K": {
@@ -123,8 +123,8 @@
           "type": "caption",
           "settings": {
             "caption": "30-day money back guarantee",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "text_style": "subtitle",
+            "text_size": "small"
           }
         }
       },
