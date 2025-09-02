@@ -76,8 +76,7 @@
                 {%- when 'caption' -%}
                     {%- if block.settings.svg_type == 'single' -%}
                     {{
-                        block.settings.caption_icon
-                        | image_url:
+                        block.settings.caption_icon | image_url | img_tag: 'Describe your image', width: 100
                      }}
                   <p
                     class="group-8__text group-8__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
@@ -87,24 +86,19 @@
                   </p>
                   {%- else -%}
                     {{
-                        block.settings.caption_icon
-                        | image_url:
+                        block.settings.caption_icon | image_url | img_tag: 'Describe your image', width: 100
                      }}
                      {{
-                        block.settings.caption_icon
-                        | image_url:
+                        block.settings.caption_icon | image_url | img_tag: 'Describe your image', width: 100
                      }}
                      {{
-                        block.settings.caption_icon
-                        | image_url:
+                        block.settings.caption_icon | image_url | img_tag: 'Describe your image', width: 100
                      }}
                      {{
-                        block.settings.caption_icon
-                        | image_url:
+                        block.settings.caption_icon | image_url | img_tag: 'Describe your image', width: 100
                      }}
-                     {{
-                        block.settings.caption_icon
-                        | image_url:
+                    {{
+                        block.settings.caption_icon | image_url | img_tag: 'Describe your image', width: 100
                      }}
                   <p
                     class="group-8__text group-8__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
@@ -123,20 +117,17 @@
                   <div>
                     <div>
                     {{
-                        block.settings.icon_darts
-                        | image_url:
+                        block.settings.icon_darts | image_url | image_tag: 'Describe', width: 100
                      }}
                     </div>
                     <div>
                     {{
-                        block.settings.icon_arrows
-                        | image_url:
+                        block.settings.icon_arrows | image_url | image_tag: 'Describe', width: 100
                      }}
                     </div>
                     <div>
                     {{
-                        block.settings.icon_shield
-                        | image_url:
+                        block.settings.icon_shield | image_url | image_tag: 'Describe', width: 100
                      }}
                     </div>
                   </div>
@@ -481,7 +472,7 @@
               "label": "t:sections.group-8.blocks.caption.settings.svg_type.options__1.label"
             },
             {
-              "value": "many",
+              "value": "stars",
               "label": "t:sections.group-8.blocks.caption.settings.svg_type.options__2.label"
             }
           ],
