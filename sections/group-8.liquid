@@ -119,7 +119,7 @@
                     {{ block.settings.text }}
                   </div>
                   {%- else -%}
-                  <div class="d-flex flex-row">
+                  <div class="d-flex-row">
                     <div class="d-ruby">
                     {%- if block.settings.icon_darts != blank -%}
                     {{
@@ -178,7 +178,7 @@
                         {{ block.settings.button_label_two | escape }}
                         </a>
                     {%- else -%}
-                    <div class="d-flex flex-row">
+                    <div class="d-flex-row">
                         <a
                         {% if block.settings.button_link == blank %}
                             role="link" aria-disabled="true"
