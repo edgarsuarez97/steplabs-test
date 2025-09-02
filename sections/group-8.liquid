@@ -74,10 +74,13 @@
                     {{ block.settings.heading }}
                   </h2>
                 {%- when 'caption' -%}
+                <div>
                     {%- if block.settings.svg_type == 'single' -%}
+                    {%- if block.settings.caption_icon != blank -%}
                     {{
                         block.settings.caption_icon | image_url | img_tag: 'Describe your image', width: 100
                      }}
+                    {%- endif -%}
                   <p
                     class="group-8__text group-8__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
                     {{ block.shopify_attributes }}
@@ -85,6 +88,7 @@
                     {{ block.settings.caption | escape }}
                   </p>
                   {%- else -%}
+                  {%- if block.settings.caption_icon != blank -%}
                     {{
                         block.settings.caption_icon | image_url | img_tag: 'Describe your image', width: 100
                      }}
@@ -100,6 +104,7 @@
                     {{
                         block.settings.caption_icon | image_url | img_tag: 'Describe your image', width: 100
                      }}
+                     {%- endif -%}
                   <p
                     class="group-8__text group-8__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
                     {{ block.shopify_attributes }}
@@ -107,28 +112,43 @@
                     {{ block.settings.caption | escape }}
                   </p>
                   {%- endif %}
+                  </div>
                 {%- when 'text' -%}
                   {%- if block.settings.text_type == 'text' -%}
-                  <svg ></svg>
                   <div class="group-8__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
                   </div>
                   {%- else -%}
                   <div>
                     <div>
+                    {%- if block.settings.icon_darts != blank -%}
                     {{
                         block.settings.icon_darts | image_url | image_tag: 'Describe', width: 100
                      }}
+                    {%- endif %}
+                     <div class="group-8__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                        {{ block.settings.text }}
+                    </div>
                     </div>
                     <div>
+                    {%- if block.settings.icon_arrows != blank -%}
                     {{
                         block.settings.icon_arrows | image_url | image_tag: 'Describe', width: 100
                      }}
+                     {%- endif %}
+                     <div class="group-8__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                    {{ block.settings.text }}
+                  </div>
                     </div>
                     <div>
+                    {%- if block.settings.icon_shield != blank -%}
                     {{
                         block.settings.icon_shield | image_url | image_tag: 'Describe', width: 100
                      }}
+                     {%- endif %}
+                     <div class="group-8__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                    {{ block.settings.text }}
+                  </div>
                     </div>
                   </div>
                   {%- endif -%}
